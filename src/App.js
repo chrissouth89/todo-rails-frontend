@@ -32,8 +32,6 @@ function App(props) {
   // Our Api Url
   const url = "https://todos-rails-ruby.herokuapp.com/todos";
 
-  console.log(url)
-
   // State to Hold The List of Posts
   const [posts, setPosts] = useState([]);
 
