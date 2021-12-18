@@ -80,7 +80,7 @@ function App(props) {
 
   // Function to edit todo on form submission
   const updateTodo = async (todo) => {
-    const response = await fetch(url + todo.id + "/", {
+    const response = await fetch(url + "/" + todo.id, {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function App(props) {
 
   // Function to edit todo on form submission
   const deleteTodo = async (todo) => {
-    const response = await fetch(url + todo.id + "/", {
+    const response = await fetch(url + "/" + todo.id, {
       method: "delete",
     });
 
